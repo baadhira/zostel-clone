@@ -228,9 +228,9 @@
 
 .zotrips-list li:hover {
   color: rgb(255, 107, 0);
-  background-color: rgba(255, 107, 0, 0.08);
+  /* background-color: rgba(255, 107, 0, 0.08);
   transform: translateX(4px);
-  padding-left: 0.8rem;
+  padding-left: 0.8rem; */
 }
 
 @keyframes dropdownFadeIn {
