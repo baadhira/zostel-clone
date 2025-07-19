@@ -1,5 +1,3 @@
-// Enhanced HeaderLargeScreen.jsx with Hover Effects and Smooth Transitions
-
 import { useState } from "react";
 import search from "../../assets/images/search.png";
 import zostel from "../../assets/images/zostell.png";

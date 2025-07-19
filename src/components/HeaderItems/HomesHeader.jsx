@@ -28,7 +28,6 @@ function HomesHeader({showDropdownHomes,closeOtherDropdowns,setShowDropdownHomes
                 />
                 {showDropdownHomes && (
                   <div className="homes-dropdown">
-                    {/* Left side image */}
                     <div className="homes-left">
                       <img
                         src={homeDropImg}
@@ -42,9 +41,7 @@ function HomesHeader({showDropdownHomes,closeOtherDropdowns,setShowDropdownHomes
                       <button className="see-all-btn">See All</button>
                     </div>
     
-                    {/* Right side tabs */}
                     <div className="homes-right">
-                      {/* Tab buttons */}
                       <div className="homes-tabs">
                         {Object.keys(homesData).map((region) => (
                           <button

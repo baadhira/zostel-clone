@@ -54,7 +54,9 @@
   border-radius: 16px;
   z-index: 999;
   padding: 2rem;
-  width: 800px;
+  width: max-content;
+  min-width: 600px;
+  max-width: 900px;
   left: -2rem;
   gap: 2.5rem;
   opacity: 0;
@@ -133,6 +135,8 @@
 
 .homes-right {
   flex: 1;
+    min-width: 300px;
+  width: fit-content;
 }
 
 .homes-tabs {

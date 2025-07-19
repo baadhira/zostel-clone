@@ -1,4 +1,3 @@
-// NavItem.jsx
 import React from "react";
 
 const NavItem = ({ onHover, icon, label, badge }) => {

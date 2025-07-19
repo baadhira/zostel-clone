@@ -50,7 +50,6 @@ function ZostelPlusHeader({isZostelPlusIsOpen,closeOtherDropdowns,setZostelPlusI
                     </div>
     
                     <div className="homes-right">
-                      {/* Tab buttons */}
                       <div className="homes-tabs">
                         {Object.keys(homesData).map((region) => (
                           <button

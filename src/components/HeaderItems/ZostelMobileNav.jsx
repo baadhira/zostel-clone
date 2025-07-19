@@ -12,14 +12,12 @@ import homeIcon from "../../assets/svg/home.svg";
 import zoSelect from '../../assets/images/zoselectionsicon.png'
 const ZostelMobileNav = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  // Changed to track only one expanded section at a time
   const [expandedSection, setExpandedSection] = useState(null);
 
   const toggleSidebar = () => {
     const newState = !sidebarOpen;
     setSidebarOpen(newState);
     
-    // Prevent body scroll when sidebar is open
     if (newState) {
       document.body.classList.add('sidebar-open');
     } else {
@@ -27,7 +25,6 @@ const ZostelMobileNav = () => {
     }
   };
 
-  // Cleanup effect to remove body class on unmount
   useEffect(() => {
     return () => {
       document.body.classList.remove('sidebar-open');
@@ -35,12 +32,9 @@ const ZostelMobileNav = () => {
   }, []);
 
   const toggleSection = (section) => {
-    // If clicking the same section that's already expanded, close it
-    // If clicking a different section, expand that one and close others
     setExpandedSection(prev => prev === section ? null : section);
   };
 
-  // Navigation sections data
   const navigationSections = [
     {
       id: 'zostel',
@@ -113,7 +107,6 @@ const ZostelMobileNav = () => {
     }
   ];
 
-  // Additional menu items (non-expandable)
   const additionalMenuItems = [
     {
       id: 'zoSelections',
@@ -139,12 +132,10 @@ const ZostelMobileNav = () => {
     }
   ];
 
-  // Simple menu item component for non-expandable items
   const SimpleMenuItem = ({ item }) => (
     <div className="zostel-nav-section">
       <div className="zostel-simple-menu-item">
         <div className="zostel-nav-left">
-          {/* zoSelect */}
           {item.isImage?<img src={zoSelect}/>:<span className="zostel-simple-icon">{item.icon}</span>}
           
           <span className="zostel-nav-left-title">{item.title}</span>
@@ -222,10 +213,8 @@ const ZostelMobileNav = () => {
             <NavigationSection key={section.id} section={section} />
           ))}
           
-          {/* Horizontal divider after navigation sections */}
           <hr className="zostel-horizontal-divider" />
           
-          {/* Additional menu items */}
           {additionalMenuItems.map((item) => (
             <SimpleMenuItem key={item.id} item={item} />
           ))}

@@ -34,7 +34,6 @@ function App() {
 
       {isMobileHero && <ZostelBookingInterface />}
 
-      {/* Dummy content for scroll test */}
       <div style={{ height: "2000px" }}></div>
     </>
   );

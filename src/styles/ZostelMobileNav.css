@@ -178,7 +178,6 @@
   line-height: 1;
 }
 
-/* OVERLAY */
 .zostel-overlay {
   position: fixed;
   top: 0;
@@ -189,7 +188,6 @@
   z-index: 40;
 }
 
-/* SIDEBAR */
 .zostel-sidebar {
   position: fixed;
   top: 0;
@@ -260,7 +258,6 @@ font-size: 15px;
   line-height: 22px;
   color: #333333;
 }
-/* /className="zostel-nav-left-title" */
 .zostel-nav-icon {
   width: 24px;
   height: 24px;
