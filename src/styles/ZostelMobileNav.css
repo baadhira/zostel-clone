@@ -1,0 +1,461 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Helvetica Neue", Arial, sans-serif;
+}
+.zostel-container {
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.zostel-horizontal-divider {
+  border: none;
+  border-top: 1px solid #ebe6e5;
+  margin: 16px 16px;
+  height: 1px;
+}
+.zostel-horizontal-divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 16px 16px;
+  height: 1px;
+}
+
+.zostel-simple-menu-item {
+  width: 100%;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  cursor: pointer;
+  color: #374151;
+}
+
+.zostel-simple-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.zostel-new-badge {
+  background-color: #32cd32;
+  color: white;
+  border-radius: 20px;
+  font-size: 10px;
+  padding: 5px 8px;
+  margin-left: 4px;
+}
+.white-zostel-icon{
+  width: 25px;
+  height: 25px;
+}
+.zostel-header {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 60;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.close-icon-mobile{
+  width: 20px;
+  height: 25px;
+}
+
+.zostel-icon-mobile{
+  width: 15px;
+  height: 15px;
+  margin-right:10px;
+}
+
+.zostel-header-left, .zostel-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.zostel-menu-toggle {
+  background: none;
+  border: none;
+  padding: 8px;
+  margin-right: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.zostel-menu-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.zostel-menu-icon-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #374151;
+  border-radius: 1px;
+}
+
+.zostel-logo {
+  display: flex;
+  align-items: center;
+}
+
+.zostel-logo-icon {
+  width: 32px;
+  height: 32px;
+  background-color: #f97316;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.zostel-logo-text {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.zostel-login-btn {
+  background-color: #f15824;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.zostel-get-app-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.zostel-close-button, .zostel-menu-dots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+}
+
+.zostel-dot {
+  width: 4px;
+  height: 4px;
+  background-color: #4b5563;
+  border-radius: 50%;
+}
+
+.zostel-cross-icon {
+  font-size: 24px;
+  color: #374151;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* OVERLAY */
+.zostel-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 40;
+}
+
+/* SIDEBAR */
+.zostel-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh; 
+  transition: transform 0.3s ease;
+  z-index: 50;
+  transform: translateX(100%);
+  overflow-y: auto;
+}
+
+.zostel-sidebar.open {
+  transform: translateX(0);
+}
+
+.zostel-sidebar-header {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.zostel-close-btn {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.zostel-close-icon {
+  font-size: 20px;
+  color: #374151;
+}
+
+.zostel-sidebar-content {
+  margin-top: 80px; 
+  padding: 16px 0;
+  padding-bottom: 32px; 
+}
+
+.zostel-nav-section {
+  padding: 0 16px;
+  margin-bottom: 8px;
+}
+
+.zostel-nav-button {
+  width: 100%;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  cursor: pointer;
+  color: #374151;
+}
+
+.zostel-nav-left {
+  display: flex;
+  align-items: center;
+  
+}
+.zostel-nav-left-title{
+font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #333333;
+}
+/* /className="zostel-nav-left-title" */
+.zostel-nav-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #f97316;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.zostel-chevron {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.zostel-submenu {
+  margin-left: 25px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.zostel-submenu.expanded {
+  max-height: 400px;
+  opacity: 1;
+}
+
+.zostel-submenu-item {
+  padding: 8px 0;
+  font-size: 14px;
+  /* color: #6b7280; */
+  cursor: pointer;
+  font-weight: 500;
+  line-height: 22px;
+  color: #333333;
+}
+
+.zostel-app-section {
+  padding: 16px;
+  margin-top: 32px;
+}
+
+.zostel-app-card {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  border-color: black;
+}
+
+.zostel-app-content {
+  display: flex;
+  align-items: center;
+}
+
+.zostel-app-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #f15824;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.zostel-app-info {
+  flex: 1;
+}
+
+.zostel-app-title {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.zostel-app-stats {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.zostel-stars .filled {
+  color: #f15824;
+}
+
+.zostel-stars .empty {
+  color: #d1d5db;
+}
+
+.zostel-main-content {
+  padding: 16px;
+  margin-top: 70px; 
+}
+
+.zostel-booking-card {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.zostel-tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+
+.zostel-tab {
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.zostel-tab.active {
+  color: #f97316;
+  font-weight: 500;
+  border-bottom: 2px solid #f97316;
+}
+
+.zostel-booking-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.zostel-booking-form input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.zostel-book-btn {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.zostel-promo {
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  overflow: hidden;
+}
+
+.zostel-promo-content {
+  padding: 32px;
+  color: white;
+}
+
+.zostel-promo-content h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.zostel-promo-content p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.zostel-promo-details {
+  font-size: 14px;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.zostel-promo-tag {
+  font-style: italic;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.zostel-explore-btn {
+  background-color: white;
+  color: #f97316;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+body.sidebar-open {
+  overflow: hidden;
+}

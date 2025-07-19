@@ -1,0 +1,294 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Helvetica Neue", Arial, sans-serif;
+}
+
+.homes-wrapper {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #333333;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  letter-spacing: -0.01em;
+}
+
+.home-icon-large {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.homes-wrapper:hover {
+  background-color: rgba(242,242,242,255);
+  color: rgb(10, 10, 10);
+  border-radius: 50px;
+}
+
+.homes-wrapper.active {
+  background-color: rgba(242,242,242,255);
+  color: rgb(10, 10, 10);
+}
+
+.dropdown-icon-home,
+.dropup-icon-home {
+  width: 1rem;
+  height: 1rem;
+  transition: all 0.3s ease;
+  margin-left: 0.5rem;
+}
+
+.icon-transition {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.homes-dropdown {
+  position: absolute;
+  top: 3.3rem;
+  display: flex;
+  background: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  z-index: 999;
+  padding: 2rem;
+  width: 800px;
+  left: -2rem;
+  gap: 2.5rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: dropdownFadeIn 0.3s ease-out forwards;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.homes-dropdown::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: 2rem;
+  width: 120px;
+  height: 1.5rem;
+  background: transparent;
+  pointer-events: auto;
+}
+
+.homes-left {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.homes-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.homes-image:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.homes-desc {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 1rem 0;
+  color: #666666;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+}
+
+.see-all-btn {
+  background: black;
+  font-size: 12px !important;
+  font-weight: 500;
+  line-height: 18px;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.see-all-btn:hover {
+  background: rgb(255, 107, 0);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3);
+}
+
+.homes-right {
+  flex: 1;
+}
+
+.homes-tabs {
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tab-btn {
+  background: #f5f5f5;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: rgb(102, 102, 102);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(17, 17, 17);
+}
+
+.tab-btn.active {
+  border: 1px solid black;
+}
+
+.homes-list ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  column-fill: balance;
+}
+
+.homes-list ul.js-single-column {
+  column-count: 1;
+  column-gap: 0;
+}
+
+.homes-list ul.js-two-columns {
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.homes-list ul.js-three-columns {
+  column-count: 3;
+  column-gap: 0.5rem;
+}
+
+@supports selector(:has(*)) {
+  .homes-list ul {
+    column-count: 1;
+    column-gap: 0;
+  }
+
+  .homes-list ul:has(li:nth-child(9)):not(:has(li:nth-child(17))) {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+
+  .homes-list ul:has(li:nth-child(17)) {
+    column-count: 3;
+    column-gap: 1.5rem;
+  }
+}
+
+@supports not selector(:has(*)) {
+  .homes-list ul:not([class*="js-"]) {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+}
+
+.homes-list li {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(17, 17, 17);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  break-inside: avoid;
+  margin-bottom: 0.2rem;
+}
+
+.homes-list li:hover {
+  color: rgb(255, 107, 0);
+  background-color: rgba(255, 107, 0, 0.08);
+  transform: translateX(4px);
+  padding-left: 0.8rem;
+}
+
+@media (max-width: 1200px) {
+  .homes-dropdown {
+    width: 700px;
+    left: -1rem;
+  }
+
+  .homes-left {
+    width: 180px;
+  }
+
+  .homes-list ul.js-three-columns {
+    column-count: 2;
+    column-gap: 0.5rem;
+  }
+
+  @supports selector(:has(*)) {
+    .homes-list ul:has(li:nth-child(17)) {
+      column-count: 2;
+      column-gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .homes-dropdown {
+    width: 600px;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .homes-left {
+    width: 100%;
+  }
+
+  .homes-list ul,
+  .homes-list ul.js-two-columns,
+  .homes-list ul.js-three-columns {
+    column-count: 1;
+    column-gap: 0;
+  }
+
+  @supports selector(:has(*)) {
+    .homes-list ul:has(li:nth-child(9)),
+    .homes-list ul:has(li:nth-child(17)) {
+      column-count: 1;
+      column-gap: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .homes-dropdown {
+    width: 90vw;
+    left: -1rem;
+    padding: 1.5rem;
+  }
+
+  .homes-tabs {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  .tab-btn {
+    padding: 0.5rem 1rem;
+    font-size: 11px;
+  }
+}

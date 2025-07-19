@@ -1,0 +1,252 @@
+.hero-section {
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: background-image 1s ease-in-out;
+}
+
+.hero-overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+  align-items: center;
+  color: white;
+}
+
+.hero-title {
+  position: absolute;
+  top: 35%;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 96px;
+  color: rgb(250, 254, 255);
+  text-shadow: 
+    2px 2px 0 rgba(0, 0, 0, 1),
+    4px 4px 10px rgba(0, 0, 0, 0.8),
+    6px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tab-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 0;
+  width: 90%;
+  position: absolute;
+  top: 80%;
+  max-width: 1100px;
+  color: black;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tabs-hero {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.tabs-hero li {
+   cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 20px 15px;
+  border-bottom: 3px solid transparent;
+  flex: 1;
+  text-align: center;
+  color: #6c757d;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.tabs-hero li:hover {
+   color: #495057;
+  background-color: #fff;
+}
+
+.tabs-hero li.active {
+   color: black;
+  border-bottom: 3px solid transparent;
+  background-color: white;
+}
+.tabs-hero li.active::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background-color: #ff5722;
+  border-radius: 2px; 
+}
+.tab-content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 0;
+  align-items: stretch;
+  padding: 30px;
+  background-color: white;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  position: relative;
+}
+
+.form-field:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 1px;
+  background-color: #e9ecef;
+}
+
+.field-label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #6c757d;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-input {
+  padding: 0;
+  border: none !important;
+  outline: none !important;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212529;
+  background: transparent !important;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  box-shadow: none !important;
+}
+
+.search-input::placeholder {
+  color: #adb5bd;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.search-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+
+.date-field {
+  cursor: pointer;
+  position: relative;
+}
+
+.date-display {
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #212529;
+  border-bottom: 1px solid #e9ecef;
+  transition: border-color 0.2s ease;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+}
+
+.date-field:hover .date-display {
+  border-bottom-color: #ff5722;
+}
+
+.date-input-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.book-btn-container {
+  align-self: center;
+  padding: 0;
+}
+
+.book-btn {
+  background: linear-gradient(135deg, #ff5722 0%, #f44336 100%);
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.3);
+  width: 100%; 
+  max-width: 300px; 
+  min-width: 220px;
+  height: 48px;
+}
+
+@media (max-width: 634px) {
+  .tab-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .tabs-hero {
+    flex-wrap: wrap;
+  }
+
+  .tabs-hero li {
+    font-size: 12px;
+    padding: 15px 10px;
+  }
+
+  .tab-content-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .form-field {
+    padding: 0;
+  }
+
+  .form-field::after {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    line-height: 60px;
+  }
+}
