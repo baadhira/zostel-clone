@@ -5,7 +5,7 @@ import dropupIcon from "../../assets/svg/dropup.svg";
 import zostelIcon from "../../assets/svg/zostel.svg";
 import closeIcon from "../../assets/images/close.png";
 import zoTrips from "../../assets/svg/zotrips.svg";
-import zostelplusIcon from "../../assets/svg/zostelplusIcon.svg";
+import zostelplusIcon from "../../assets/svg/zostelplusicon.svg";
 import whiteIcon from "../../assets/svg/whitezostel.svg";
 import zostelHeader from '../../assets/images/zostelheadericon.png'
 import homeIcon from "../../assets/svg/home.svg";
