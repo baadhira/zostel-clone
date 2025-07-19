@@ -1,7 +1,7 @@
 import zostelplusImg from "../../assets/images/zostelplusdrop.png";
 import dropdownIcon from "../../assets/svg/dropdown.svg";
 import dropupIcon from "../../assets/svg/dropup.svg";
-import zostelplusIcon from "../../assets/svg/zostelplusIcon.svg";
+import zostelplusIcon from "../../assets/svg/zostelplusicon.svg";
 import {
     homesData,
     zostelPlusData
