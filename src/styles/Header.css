@@ -211,19 +211,19 @@
     padding: 0.5rem 0.6rem;
     font-size: 14px;
   }
-  .dropdown-icon-zotrips,
+  /* .dropdown-icon-zotrips,
   .dropup-icon-zotrips,
   .dropdown-icon-home,
   .dropup-icon-home,
   .dropdown-icon-zostel-plus,
   .dropup-icon-zostel-plus {
-    /* display: none; */
-  }
+    display: none;
+  } */
 }
 @media (max-width: 1000px) {
-  .new-badge {
-    /* display: none; */
-  }
+  /* .new-badge {
+    display: none;
+  } */
   .nav-item-header {
     font-size: 12px;
   }
@@ -447,9 +447,9 @@
     width: 700px;
     left: -1rem;
   }
-  .homes-left {
-    /* width: 180px; */
-  }
+  /* .homes-left {
+    width: 180px;
+  } */
   .zotrips-list ul.js-three-columns {
     column-count: 2;
     column-gap: 0.5rem;
