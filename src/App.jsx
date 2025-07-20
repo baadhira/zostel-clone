@@ -5,6 +5,7 @@ import ZostelMobileNav from "./components/HeaderItems/ZostelMobileNav";
 import ZostelBookingInterface from "./components/HeroItems/ZostelBookingInterface";
 
 function App() {
+  
   const [isMobile, setIsMobile] = useState(window.innerWidth < 750);
   const [isMobileHero, setIsMobileHero] = useState(window.innerWidth < 635);
 
