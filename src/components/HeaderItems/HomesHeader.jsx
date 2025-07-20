@@ -17,8 +17,11 @@ function HomesHeader({showDropdownHomes,closeOtherDropdowns,setShowDropdownHomes
                 }}
                 onMouseLeave={() => setShowDropdownHomes(false)}
               >
+                <div className="nav-item-header">
                 <img src={homeIcon} alt="homeIcon" className="home-icon-large" />
-                Homes
+               <div className="homes-label">Homes</div>
+
+                
                 <img
                   src={showDropdownHomes ? dropupIcon : dropdownIcon}
                   alt={showDropdownHomes ? "dropup-icon" : "dropdown-icon"}
@@ -26,6 +29,7 @@ function HomesHeader({showDropdownHomes,closeOtherDropdowns,setShowDropdownHomes
                     showDropdownHomes ? "dropup-icon-home" : "dropdown-icon-home"
                   }`}
                 />
+                </div>
                 {showDropdownHomes && (
                   <div className="homes-dropdown">
                     <div className="homes-left">

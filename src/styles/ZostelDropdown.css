@@ -82,13 +82,19 @@
 
 @media (max-width: 1200px) {
   .zostel-dropdown {
-    min-width: 500px;
-    max-width: 700px;
+    width: max-content;
+  min-width: 300px;
+  max-width: 900px;
     left: -1rem;
+  }
+  .homes-left{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .zostel-dropdown {
     min-width: 400px;
     max-width: 600px;
@@ -100,7 +106,7 @@
     min-width: unset;
     width: 100%;
   }
-}
+} */
 
 .zostel-dropdown::before {
   content: "";

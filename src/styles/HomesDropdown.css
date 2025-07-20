@@ -231,7 +231,9 @@
 
 @media (max-width: 1200px) {
   .homes-dropdown {
-    width: 700px;
+     width: max-content;
+  min-width: 300px;
+  max-width: 900px;
     left: -1rem;
   }
 
@@ -255,7 +257,7 @@
 @media (max-width: 1000px) {
   .homes-dropdown {
     width: 600px;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 1.5rem;
   }
 

@@ -17,8 +17,9 @@ function ZoTripsHeader({showDropdown,closeOtherDropdowns,setShowDropdown,getColu
                 }}
                 onMouseLeave={() => setShowDropdown(false)}
               >
+                <div className="nav-item-header">
                 <img src={zoTrips} alt="homeIcon" className="home-icon-large" />
-                Zo Trips
+                <div className="zo-trips">Zo Trips</div>
                 <img
                   src={showDropdown ? dropupIcon : dropdownIcon}
                   alt={showDropdown ? "dropup-icon" : "dropdown-icon"}
@@ -26,6 +27,7 @@ function ZoTripsHeader({showDropdown,closeOtherDropdowns,setShowDropdown,getColu
                     showDropdown ? "dropup-icon-zotrips" : "dropdown-icon-zotrips"
                   }`}
                 />
+                </div>
                 {showDropdown && (
                   <div
                     className="dropdown-zotrips"

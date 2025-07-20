@@ -90,12 +90,13 @@ function HeaderLargeScreen() {
             // icon={zoSelect}
             label="Zo Selections"
             badge="NEW"
+            additionalClass='zo-selections'
           />
-          <NavItem onHover={closeOtherDropdowns} label="🗺️ Destinations" />
+          <NavItem onHover={closeOtherDropdowns}icon={'🗺️ '} label="Destinations"additionalClass='destinations' />
         </div>
         <div className="header-right-navs">
-          <NavItem onHover={closeOtherDropdowns} label="🤝 Work with us" />
-          <NavItem onHover={closeOtherDropdowns} label="💼 Open Franchise" />
+          <NavItem onHover={closeOtherDropdowns} icon={'🤝 ' }label="Work with us"   additionalClass="work-with-us"/>
+          <NavItem onHover={closeOtherDropdowns}icon={'💼 '} label="Open Franchise" additionalClass="open-franchise" />
         </div>
       </div>
     </header>

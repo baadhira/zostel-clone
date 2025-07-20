@@ -82,28 +82,30 @@ const HeroSection = () => {
 
             <div className="form-field date-field">
               <label className="field-label">Check In</label>
-              <div className="date-display">
-                {formatDateForDisplay(checkIn)}
+              <div className="search-container">
+                <input
+                  className="search-input date-default"
+                  type="text"
+                  placeholder="eg. Manali, Jodhpur, Jaipur, etc."
+                  value={formatDateForDisplay(checkIn)}
+                  onChange={e => setCheckIn(e.target.value)}
+                />
+                <div className="search-underline"></div>
               </div>
-              <input
-                className="date-input-hidden"
-                type="date"
-                value={checkIn}
-                onChange={e => setCheckIn(e.target.value)}
-              />
             </div>
 
             <div className="form-field date-field">
               <label className="field-label">Check Out</label>
-              <div className="date-display">
-                {formatDateForDisplay(checkOut)}
+              <div className="search-container">
+                <input
+                  className="search-input date-default"
+                  type="text"
+                  placeholder="eg. Manali, Jodhpur, Jaipur, etc."
+                  value={formatDateForDisplay(checkIn)}
+                  onChange={e => setCheckIn(e.target.value)}
+                />
+                <div className="search-underline"></div>
               </div>
-              <input
-                className="date-input-hidden"
-                type="date"
-                value={checkOut}
-                onChange={e => setCheckOut(e.target.value)}
-              />
             </div>
 
             <div className="form-field book-btn-container">

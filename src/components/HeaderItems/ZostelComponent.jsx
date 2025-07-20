@@ -2,7 +2,7 @@ import React from 'react'
 import zostelIcon from "../../assets/svg/zostel.svg";
 import dropupIcon from "../../assets/svg/dropup.svg";
 import dropdownIcon from "../../assets/svg/dropdown.svg";
-import zostelplusImg from "../../assets/images/zostelplusdrop.png";
+import zostelplusImg from "../../assets/images/zosteldrop.png";
 
 function ZostelComponent({isOpenZostel,closeOtherDropdowns,setIsOpenZostel,zostelLocations
     ,activeTab,setActiveTab,getColumnClass
@@ -18,12 +18,14 @@ function ZostelComponent({isOpenZostel,closeOtherDropdowns,setIsOpenZostel,zoste
                   }}
                   onMouseLeave={() => setIsOpenZostel(false)}
                 >
+                  <div className="nav-item-header">
                   <img
                     src={zostelIcon}
                     alt="homeIcon"
                     className="home-icon-large"
                   />
-                  Zostel
+                  <div className="homes-label">Zostel</div>
+                  
                   <img
                     src={isOpenZostel ? dropupIcon : dropdownIcon}
                     alt={isOpenZostel ? "dropup-icon" : "dropdown-icon"}
@@ -33,6 +35,7 @@ function ZostelComponent({isOpenZostel,closeOtherDropdowns,setIsOpenZostel,zoste
                         : "dropdown-icon-zostel-plus"
                     }`}
                   />
+                  </div>
                   {isOpenZostel && (
                     <div className="zostel-dropdown">
                       {/* <div className="left-section">

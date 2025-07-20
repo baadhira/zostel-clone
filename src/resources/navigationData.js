@@ -1,6 +1,6 @@
 export const zostelLocations = {
   North: [
-    "Zostel Banikhet",
+    "Zostel Banikhet (Dalhousie)",
     "Zostel Chitkul",
     "Zostel Delhi",
     "Zostel Dharamkot",

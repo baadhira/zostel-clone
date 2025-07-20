@@ -74,10 +74,107 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+@media (max-width: 1166px){
+  .work-with-us{
+    min-width: 40px !important;
+    max-width: 50px !important; 
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 14px;
+  }
+  .open-franchise{
+    min-width: 50px !important;
+    max-width: 60px !important; 
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 14px;
+  }
+  .zo-trips{
+    min-width: 20px !important;
+    max-width: 30px !important; 
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 14px;
+  }
+  .destinations{
+    font-size: 14px;
+  }
+  .zostel-plus-label{
+    min-width: 30px !important;
+    max-width: 40px !important; 
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 14px;
+  }
+}
+@media (max-width: 928px){
+  .homes-label{
+    font-size: 13px;
+  }
+  /* .new-badge {
+    margin-left: 8px; 
+    flex-grow: 1
+  } */
+  .nav-item-header {
+    white-space: normal;
+    
+}
+.nav-item-label {
+    /* word-wrap: break-word;
+    text-align: left;
+    min-width: 50px;
+    max-width: 60px; */
+    font-size: 14px;
+}
+.nav-item-header:hover {
+  background-color: rgba(242, 242, 242, 255);
+  color: rgb(10, 10, 10);
+  border-radius: 50px;
+}
+.work-with-us{
+  min-width: 30px !important;
+  max-width: 40px !important; 
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 13px;
+}
+.zo-selections{
+  min-width: 60px !important;
+  max-width: 70px !important; 
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 13px;
+}
+.destinations{
+  font-size: 13px;
+}
+.open-franchise{
+  min-width: 50px !important;
+  max-width: 60px !important; 
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 13px;
+}
+.zo-trips{
+  min-width: 20px !important;
+  max-width: 30px !important; 
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 13px;
+}
+.zostel-plus-label{
+  min-width: 30px !important;
+  max-width: 40px !important; 
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 13px;
+}
+}
 @media (max-width: 1199px) and (min-width: 751px) {
   .header-bottom {
     gap: 1rem;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -108,11 +205,11 @@
 @media (max-width: 1100px) {
   .nav-item-header {
     padding: 0.5rem 0.2rem;
-    font-size: 13px;
+    font-size: 14px;
   }
   .dropdown-container {
     padding: 0.5rem 0.6rem;
-    font-size: 13px;
+    font-size: 14px;
   }
   .dropdown-icon-zotrips,
   .dropup-icon-zotrips,
@@ -120,12 +217,12 @@
   .dropup-icon-home,
   .dropdown-icon-zostel-plus,
   .dropup-icon-zostel-plus {
-    display: none;
+    /* display: none; */
   }
 }
 @media (max-width: 1000px) {
   .new-badge {
-    display: none;
+    /* display: none; */
   }
   .nav-item-header {
     font-size: 12px;
@@ -152,7 +249,7 @@
   color: white;
   border-radius: 20px;
   font-size: 10px;
-  padding: 5px 8px;
+  padding: 2px 8px;
   margin-left: 4px;
 }
 .nav-item-header {
@@ -165,6 +262,10 @@
   transition: all 0.3s ease;
   cursor: pointer;
   letter-spacing: -0.01em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .nav-item-header:hover {
   background-color: rgba(242, 242, 242, 255);
@@ -347,7 +448,7 @@
     left: -1rem;
   }
   .homes-left {
-    width: 180px;
+    /* width: 180px; */
   }
   .zotrips-list ul.js-three-columns {
     column-count: 2;
@@ -362,9 +463,10 @@
 }
 @media (max-width: 1000px) {
   .dropdown-zotrips {
-    width: 600px;
-    flex-direction: column;
-    gap: 1.5rem;
+    width: max-content;
+  min-width: 300px;
+  max-width: 500px;
+    left: -1rem;
   }
   .homes-left {
     width: 100%;
@@ -391,7 +493,7 @@
 .dropdown-list ul {
   list-style: none;
   padding: 0;
-  font-size: 13px;
+  font-size: 14px;
 }
 .dropdown-list li {
   margin-bottom: 0.4rem;

@@ -19,12 +19,13 @@ function ZostelPlusHeader({isZostelPlusIsOpen,closeOtherDropdowns,setZostelPlusI
                 }}
                 onMouseLeave={() => setZostelPlusIsOpen(false)}
               >
+                <div className="nav-item-header">
                 <img
                   src={zostelplusIcon}
                   alt="homeIcon"
                   className="home-icon-large"
                 />
-                Zostel Plus
+               <div className="zostel-plus-label">Zostel Plus</div>
                 <img
                   src={isZostelPlusIsOpen ? dropupIcon : dropdownIcon}
                   alt={isZostelPlusIsOpen ? "dropup-icon" : "dropdown-icon"}
@@ -34,6 +35,7 @@ function ZostelPlusHeader({isZostelPlusIsOpen,closeOtherDropdowns,setZostelPlusI
                       : "dropdown-icon-zostel-plus"
                   }`}
                 />
+                </div>
                 {isZostelPlusIsOpen && (
                   <div className="zostel-plus-dropdown">
                     <div className="left-section-zostel-plus">
