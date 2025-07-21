@@ -225,7 +225,7 @@ const ZostelMobileNav = () => {
                 <div className="zostel-app-icon"><img src={whiteIcon} className="white-zostel-icon"/></div>
                 <div className="zostel-app-info">
                   <div className="zostel-app-title">Download Zostel App</div>
-                  <div style={{display:"flex",justifyContent:"flex-start",alignItems:"center"}}>
+                  <div className="zostel-app-stats-wrap">
                   <div className="zostel-app-stats">2M Zostelers • 4.5/5</div>
                   <div className="zostel-stars">
                     <span className="filled">★</span>

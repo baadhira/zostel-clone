@@ -200,7 +200,11 @@
   overflow-y: auto;
   background-color: #fff;
 }
-
+.zostel-app-stats-wrap{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+}
 .zostel-sidebar.open {
   transform: translateX(0);
 }
@@ -286,7 +290,7 @@ font-size: 15px;
 }
 
 .zostel-submenu.expanded {
-  max-height: 400px;
+  max-height: fit-content;
   opacity: 1;
 }
 
