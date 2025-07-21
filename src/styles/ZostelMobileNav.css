@@ -315,7 +315,8 @@ font-size: 15px;
   background-color: #f9fafb;
   border-radius: 8px;
   padding: 16px;
-  border-color: black;
+  /* border-color: black; */
+  border: 0.1px solid #d6dad6;
 }
 
 .zostel-app-content {
