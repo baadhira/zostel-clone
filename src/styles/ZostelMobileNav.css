@@ -292,6 +292,8 @@ font-size: 15px;
 .zostel-submenu.expanded {
   max-height: fit-content;
   opacity: 1;
+  /* transform: translateY(-10px); */
+  animation: dropdownFadeIn 0.3s ease-out forwards;
 }
 
 .zostel-submenu-item {
